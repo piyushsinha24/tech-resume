@@ -49,7 +49,7 @@ class TemplateData extends Component {
     let i = this.state.empCount;
     ++i;
     const template = (
-      <div className="w-4/5 p-2 m-2">
+      <div className="w-4/5 p-2 m-2" key={`empKey${i}`}>
         <div className="w-full flex-col justify-center items-center">
           <label className="p-2" htmlFor="startDate1">
             Start
@@ -109,7 +109,7 @@ class TemplateData extends Component {
     let i = this.state.projectCount;
     ++i;
     const template = (
-      <div className="w-4/5 p-2 m-2">
+      <div className="w-4/5 p-2 m-2" key={`projKey${i}`}>
         <div className="w-full flex-col justify-center items-center">
           <label className="p-2" htmlFor="startDate1">
             Start
@@ -161,7 +161,7 @@ class TemplateData extends Component {
     let i = this.state.eduCount;
     ++i;
     const template = (
-      <div className="w-4/5 p-2 m-2">
+      <div className="w-4/5 p-2 m-2" key={`eduKey${i}`}>
         <div className="w-full flex-col justify-center items-center">
           <label className="p-2" htmlFor="startDate1">
             Start

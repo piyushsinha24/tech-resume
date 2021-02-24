@@ -94,7 +94,7 @@ class Minimalist extends Component {
               : this.props.user.skills
                   .split(",")
                   .map((skill) => (
-                    <div className="inline-block px-1 mt-3 mx-1 bg-gray-dark text-sm text-white">
+                    <div className="inline-block px-1 mt-3 mx-1 bg-gray-dark text-sm text-white" key={skill}>
                       {skill}
                     </div>
                   ))}
@@ -105,7 +105,7 @@ class Minimalist extends Component {
             PROFESSIONAL EXPERIENCE
           </div>
           {[...Array(this.props.empCount)].map((e, i) => (
-            <div className="flex flex-col">
+            <div className="flex flex-col" key={`emp${i}`}>
               <div className="flex justify-between">
                 <div className="text-sm pt-3 text-gray-dark">
                   <li>{this.props.employment.jobTitles[`jobTitle${i + 1}`]}</li>
@@ -137,7 +137,7 @@ class Minimalist extends Component {
             PROJECTS
           </div>
           {[...Array(this.props.projectCount)].map((e, i) => (
-            <div className="flex flex-col">
+            <div className="flex flex-col" key={`emp${i}`}>
               <div className="flex justify-between">
                 <div className="text-sm pt-3 text-gray-dark">
                   <li>
@@ -175,7 +175,7 @@ class Minimalist extends Component {
             EDUCATION
           </div>
           {[...Array(this.props.eduCount)].map((e, i) => (
-            <div className="flex flex-col">
+            <div className="flex flex-col" key={`emp${i}`}>
               <div className="flex justify-between">
                 <div className="text-sm pt-3 text-gray-dark">
                   <li>{this.props.education.qual[`qual${i + 1}`]}</li>
