@@ -13,9 +13,9 @@ class TwoColumn extends Component {
           boxShadow: "0 3px 8px -3px rgba(0, 0, 0, 0.7)",
         }}
       >
-        <header className="flex flex-col justify-center items-start font-sans text-white w-full h-1/6">
+        <header style={{color: `${this.props.headerTextColor}`}} className="flex flex-col justify-center items-start font-sans w-full h-1/6">
           <div className="bg-gray-100 h-1/6 w-1/4"></div>
-          <div className="flex flex-col items-start justify-center px-5 bg-red-900 h-5/6 w-full">
+          <div style={{backgroundColor: `${this.props.headerColor}`}} className="flex flex-col items-start justify-center px-5 h-5/6 w-full">
             <div className="text-3xl">{this.props.user.name}</div>
             <div className="text-lg pt-3">{this.props.user.wantedJobTitle}</div>
           </div>
@@ -40,7 +40,7 @@ class TwoColumn extends Component {
               <div className="text-md text-black border-b border-black tracking-widest">
                 CONTACT
               </div>
-              <div className="text-sm pt-3">
+              <div className="text-sm pt-3 break-all">
                 <svg
                   className="w-5 inline-block"
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ class TwoColumn extends Component {
                 </svg>{" "}
                 {this.props.user.phone}
               </div>
-              <div className="text-sm pt-3">
+              <div className="text-sm pt-3 break-all">
                 <svg
                   className="w-5 inline-block"
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ class TwoColumn extends Component {
                 </svg>{" "}
                 {this.props.user.email}
               </div>
-              <div className="text-sm pt-3">
+              <div className="text-sm pt-3 break-all">
                 <svg
                   className="w-5 inline-block"
                   xmlns="http://www.w3.org/2000/svg"

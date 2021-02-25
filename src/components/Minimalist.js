@@ -13,7 +13,7 @@ class Minimalist extends Component {
           boxShadow: "0 3px 8px -3px rgba(0, 0, 0, 0.7)",
         }}
       >
-        <header className="flex justify-between items-center font-sans bg-gray-100 text-gray-dark w-full h-1/6">
+        <header style={{backgroundColor: `${this.props.headerColor}`, color: `${this.props.headerTextColor}`}} className="flex justify-between items-center font-sans w-full h-1/6">
           <div className="flex flex-col px-5">
             <div className="text-3xl">{this.props.user.name}</div>
             <div className="text-lg pt-3">{this.props.user.wantedJobTitle}</div>

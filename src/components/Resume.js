@@ -15,6 +15,8 @@ class Resume extends React.Component {
             eduCount={this.props.eduCount}
             project={this.props.projectData}
             projectCount={this.props.projectCount}
+            headerColor={this.props.headerColor}
+            headerTextColor={this.props.headerTextColor}
           />
         ) : (
           <TwoColumn
@@ -25,6 +27,8 @@ class Resume extends React.Component {
             eduCount={this.props.eduCount}
             project={this.props.projectData}
             projectCount={this.props.projectCount}
+            headerColor={this.props.headerColor}
+            headerTextColor={this.props.headerTextColor}
           />
         )}
       </React.Fragment>
