@@ -225,17 +225,16 @@ class TemplateData extends Component {
     const eduData = this.state.education;
     const projectData = this.state.project;
 
-    if(e.target.name === "templates") {
-      this.setState({type: e.target.value});
-      e.target.value === "minimalist" ? this.setState({headerColor: "#F3F4F6", headerTextColor: "#1F2937"}) : this.setState({headerColor: "#7F1D1D", headerTextColor: "#ffffff"});
-    }
-    else if(e.target.name === "headerColor") {
-      this.setState({headerColor: e.target.value});
-    }
-    else if(e.target.name === "headerTextColor") {
-      this.setState({headerTextColor: e.target.value});
-    }
-    else if (e.target.name.includes("jobTitle")) {
+    if (e.target.name === "templates") {
+      this.setState({ type: e.target.value });
+      e.target.value === "minimalist"
+        ? this.setState({ headerColor: "#F3F4F6", headerTextColor: "#1F2937" })
+        : this.setState({ headerColor: "#7F1D1D", headerTextColor: "#ffffff" });
+    } else if (e.target.name === "headerColor") {
+      this.setState({ headerColor: e.target.value });
+    } else if (e.target.name === "headerTextColor") {
+      this.setState({ headerTextColor: e.target.value });
+    } else if (e.target.name.includes("jobTitle")) {
       empData["jobTitles"][`${e.target.name}`] = e.target.value;
     } else if (e.target.name.includes("emp")) {
       empData["emp"][`${e.target.name}`] = e.target.value;
@@ -277,22 +276,46 @@ class TemplateData extends Component {
   render() {
     return (
       <div className="w-screen h-full bg-gray-light text-gray-dark font-sans">
-        <Nav showDownloadBtn={true}/>
+        <Nav showDownloadBtn={true} />
         <div className="flex p-3 print:p-0">
           <form className="w-2/5 flex flex-col justify-evenly print:hidden">
-          <h3 className="w-4/5 m-2 text-xl">Template Type</h3>
-          <select className="w-4/5 p-2 m-2 rounded" name="templates" id="templates" onChange={this.handleChange} value={this.state.type}>
-            <option value="two-column">Two-Column</option>
-            <option value="minimalist">Minimalist</option>
-          </select>
-          <div className="w-4/5">
-            <label className="m-2 text-xl block" htmlFor="header">Header Color</label>
-            <input className="mx-2 border-2 border-white rounded" type="color" id="headerColor" name="headerColor" onChange={this.handleChange} value={this.state.headerColor}/>
-          </div>
-          <div className="w-4/5">
-            <label className="m-2 text-xl block" htmlFor="header">Header-Text Color</label>
-            <input className="mx-2 border-2 border-white rounded" type="color" id="headerTextColor" name="headerTextColor" onChange={this.handleChange} value={this.state.headerTextColor}/>
-          </div>
+            <h3 className="w-4/5 m-2 text-xl">Template Type</h3>
+            <select
+              className="w-4/5 p-2 m-2 rounded"
+              name="templates"
+              id="templates"
+              onChange={this.handleChange}
+              value={this.state.type}
+            >
+              <option value="two-column">Two-Column</option>
+              <option value="minimalist">Minimalist</option>
+            </select>
+            <div className="w-4/5">
+              <label className="m-2 text-xl block" htmlFor="header">
+                Header Color
+              </label>
+              <input
+                className="mx-2 border-2 border-white rounded"
+                type="color"
+                id="headerColor"
+                name="headerColor"
+                onChange={this.handleChange}
+                value={this.state.headerColor}
+              />
+            </div>
+            <div className="w-4/5">
+              <label className="m-2 text-xl block" htmlFor="header">
+                Header-Text Color
+              </label>
+              <input
+                className="mx-2 border-2 border-white rounded"
+                type="color"
+                id="headerTextColor"
+                name="headerTextColor"
+                onChange={this.handleChange}
+                value={this.state.headerTextColor}
+              />
+            </div>
             <h3 className="w-4/5 m-2 text-xl">Personal Details</h3>
             <input
               className="w-4/5 p-2 m-2 rounded"

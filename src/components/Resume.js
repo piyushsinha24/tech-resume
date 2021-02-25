@@ -1,6 +1,6 @@
 import React from "react";
-import Minimalist from "./Minimalist";
-import TwoColumn from "./TwoColumn";
+import Minimalist from "./Templates/Minimalist";
+import TwoColumn from "./Templates/TwoColumn";
 
 class Resume extends React.Component {
   render() {
