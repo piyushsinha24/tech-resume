@@ -2,7 +2,13 @@
 ## A resume builder which helps you to effortlessly make a job-worthy resume. Easy to use and done within minutes - try now for free!
 Live: [https://main.doo2i0aqct9l.amplifyapp.com/](https://main.doo2i0aqct9l.amplifyapp.com/) 
 
-<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1614183393027/Kb_b2le0e.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress">
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1614380298728/7vRha0XwN.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress">
+
+## :dizzy: Features
+* Ready-to-use templates 
+* Color picker
+* Download PDF 
+
 
 ## :man_technologist: Technology Stack
 * [React](https://reactjs.org)
