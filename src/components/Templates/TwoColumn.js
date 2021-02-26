@@ -21,7 +21,7 @@ class TwoColumn extends Component {
           </div>
         </header>
         <div className="flex h-5/6 font-sans">
-          <div className="bg-gray-100 w-1/4">
+          <div className="bg-gray-100 w-1/4 mt-0.5">
             <section className="flex flex-col divide-y divide-black w-full mb-5 px-5 pt-3">
               <div className="text-md text-black tracking-widest">SKILLS</div>
               <div>
